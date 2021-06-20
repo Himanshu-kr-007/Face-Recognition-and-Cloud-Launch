@@ -1,6 +1,6 @@
 provider "aws" {
   region  = "ap-south-1"
-  profile = "Himanshu" 
+  profile = default" 
 }
 
 resource "aws_instance" "web" {
@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
     Name = "Web Server"
   }
   security_groups 	= [ "default" ]
-  key_name = "Himanshu"
+  key_name = "default"
 }
 
 
